@@ -18,73 +18,31 @@ const Consultation= () =>{
     // })
     return(
         <div>
-            <div class="grid-container">
-                <div class="Header"></div>
-                <div class="existing-consultation">
-                    <div class="summary-in">
-                        <div class="sunm-in"></div>
-                        <div class="rrooms">
-                            <div class="rooms">ROOMS</div>
-                            <div class="rooms-in"></div>
-                            <div class="dates"></div>
-                            <div class="date-ins"></div>
-                        </div>
-                    </div>
-                    <div class="attached-files">
-                        <div class="files-">ATTACHED FILES</div>
-                        <div class="vedios">VEDIOS</div>
-                        <div class="audios">AUDIOS</div>
-                    </div>
-                    <div class="names"></div>
-                    <div class="namess">
-                        <div class="doc-names">DOC-NAME</div>
-                        <div class="doc-in"></div>
-                        <div class="patient-names"></div>
-                        <div class="patname-in"></div>
-                        <div class="status"></div>
-                    </div>
+            <div class="grid-container2">
+                <div class="dispaly1">
+                    <div class="doc-name">Doctor Name</div>
+                    <div class="room">Room</div>
+                    <div class="date">Date</div>
+                    <div class="doc-in">Dr Peter</div>
+                    <div class="room-in">room50</div>
+                    <div class="date-in">12/12/12</div>
                 </div>
-                <form className="consultation-form">
-                <div class="new-consultation">
-                    <div class="patient-name"></div>
-                    <div class="pat-input"></div>
-                    <div class="Doctors-name"></div>
-                    <div class="doc-input">
-                        <div class="name"></div>
-                        <div class="doc-name"></div>
-                        <div class="doc-id"></div>
-                    </div>
-                    <div class="date">
-                        <div class="date-in"></div>
-                    </div>
-                    <div class="save"></div>
-                    <div class="attaced-files">
-                        <div class="files"></div>
-                        <div class="vedio"></div>
-                        <div class="audi"></div>
-                        <div class="vedio-in"></div>
-                        <div class="files-in"></div>
-                        <div class="filess"></div>
-                        <div class="audi-in"></div>
-                    </div>
-                    <div class="roomss">
-                        <div class="room-in"></div>
-                        <div class="rooms-title"></div>
-                    </div>
-                    <div class="sumin">
-                        <div class="sum-title"></div>
-                        <div class="sum-in"></div>
-                    </div>
-                </div>
-                </form>
+                <div class="display2"></div>
+                <div class="textarea">12312</div>
             </div>
-          
-
-          
-
-           
-            
-        </div>
+            <form className="new-doctor-form">
+                <h3>new consultation</h3>
+                    <div class="name">Doctors Name</div>
+                    <div class="in"><input></input></div>
+                    <div class="date">Date</div>
+                    <div class="ins"><input></input></div>
+                    <div class="room">Room</div>
+                    <div class="insur"><input></input></div>
+                    <div class="note">Note</div>
+                    <div class="inpass"><textarea></textarea></div>
+                    <div class="button"><button>Submit</button></div>
+            </form>
+            </div>
     )
 }
 
