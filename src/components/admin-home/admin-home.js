@@ -7,6 +7,31 @@ import NewDoctorForm from './NewDoctorForm'
 import NewPatientForm from './NewPatientForm'
 
 class App extends Component {
+
+    getNewAdminData = () => {
+        const addAdminForm = document.querySelector('.form1')
+        addAdminForm.addEventListener('submit', function (event) {
+          event.preventDefault()
+          console.log(event.target)
+          console.log("Submitting the new admin form")
+          var formData = new FormData(addAdminForm)
+          console.log(formData)
+          axios.post('http://localhost:3330/add-admin', formData)
+        })
+        }
+
+    getNewPatData = () => {
+        const addPatForm = document.querySelector('.form3')
+        addPatForm.addEventListener('submit', function(event){
+            event.preventDefault()
+            console.log(event.target)
+            console.log("Submitting the new patient form")
+            var formData = new FormData(addPatForm)
+            console.log(formData)
+            axios.post('http://localhost:3330/add-patient', formData)
+        })
+    }
+
     render() {
         return (
             <div class="container">
@@ -34,7 +59,7 @@ class App extends Component {
                 <div class="main-2">
                     <Switch>
                         <Route exact path="/new-admin">
-                             <NewAdminForm/>
+                             <NewAdminForm newAdmin={this.getNewAdminData}/>
                         </Route>
                         <Route exact path="/new-doctor">
                             <NewDoctorForm/>
